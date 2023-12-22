@@ -169,7 +169,6 @@ $('document').ready(function(){
         audio.pause();
 		var audio1 = $('.song2')[0];
         audio1.play();
-
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
@@ -180,7 +179,7 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(900).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(2000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
